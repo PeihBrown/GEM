@@ -6,13 +6,13 @@ it("renders UnitValueStepper component", () => {
   render(<App />);
 
   // Check if unit buttons are rendered
-  expect(screen.getByText('%')).toBeInTheDocument();
-  expect(screen.getByText('px')).toBeInTheDocument();
+  expect(screen.getByText('%')).toBeDefined();
+  expect(screen.getByText('px')).toBeDefined();
 
   // Check if value input is rendered
-  expect(screen.getByRole('textbox')).toBeInTheDocument();
+  expect(screen.getByRole('textbox')).toBeDefined();
 
   // Check if increment/decrement buttons are rendered
-  expect(screen.getByText('−')).toBeInTheDocument();
-  expect(screen.getByText('+')).toBeInTheDocument();
+  expect(screen.getByText('−')).toBeDefined();
+  expect(screen.getByText('+')).toBeDefined();
 });
